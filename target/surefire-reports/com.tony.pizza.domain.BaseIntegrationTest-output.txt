@@ -1,0 +1,8 @@
+2012-10-25 15:15:40,131 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Unsuccessful: create table base (id bigint not null auto_increment, name varchar(255) not null, version integer, primary key (id)) ENGINE=InnoDB
+2012-10-25 15:15:40,131 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'base' already exists
+2012-10-25 15:15:40,132 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Unsuccessful: create table pizza (id bigint not null auto_increment, name varchar(255) not null, price float, version integer, base bigint, primary key (id)) ENGINE=InnoDB
+2012-10-25 15:15:40,132 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'pizza' already exists
+2012-10-25 15:15:40,162 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Unsuccessful: create table topping (id bigint not null auto_increment, name varchar(255) not null, version integer, primary key (id)) ENGINE=InnoDB
+2012-10-25 15:15:40,162 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Table 'topping' already exists
+2012-10-25 15:15:40,163 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Unsuccessful: alter table pizza add index FK65BDC882E5924EB (base), add constraint FK65BDC882E5924EB foreign key (base) references base (id)
+2012-10-25 15:15:40,163 [main] ERROR org.hibernate.tool.hbm2ddl.SchemaExport - Duplicate key name 'FK65BDC882E5924EB'

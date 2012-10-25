@@ -1,0 +1,1 @@
+2012-10-25 15:15:40,798 [main] ERROR org.hibernate.util.JDBCExceptionReporter - Cannot delete or update a parent row: a foreign key constraint fails (`pizzashop`.`pizza_topping`, CONSTRAINT `FK57C60B901C723E31` FOREIGN KEY (`pizza`) REFERENCES `pizza` (`id`))

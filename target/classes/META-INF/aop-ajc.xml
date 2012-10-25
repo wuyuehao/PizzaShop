@@ -1,0 +1,30 @@
+<aspectj>
+<aspects>
+<aspect name="com.tony.pizza.domain.PizzaOrder_Roo_Configurable"/>
+<aspect name="com.tony.pizza.domain.Topping_Roo_ToString"/>
+<aspect name="com.tony.pizza.domain.Topping_Roo_Configurable"/>
+<aspect name="com.tony.pizza.domain.Pizza_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.tony.pizza.web.BaseController_Roo_Controller"/>
+<aspect name="com.tony.pizza.domain.Base_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.tony.pizza.domain.Pizza_Roo_ToString"/>
+<aspect name="com.tony.pizza.domain.PizzaOrder_Roo_Jpa_Entity"/>
+<aspect name="com.tony.pizza.web.ToppingController_Roo_Controller"/>
+<aspect name="com.tony.pizza.domain.Topping_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.tony.pizza.domain.PizzaOrder_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.tony.pizza.domain.Topping_Roo_Jpa_Entity"/>
+<aspect name="com.tony.pizza.domain.Base_Roo_Configurable"/>
+<aspect name="com.tony.pizza.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="com.tony.pizza.domain.Base_Roo_ToString"/>
+<aspect name="com.tony.pizza.domain.Base_Roo_Jpa_Entity"/>
+<aspect name="com.tony.pizza.domain.Pizza_Roo_Jpa_Entity"/>
+<aspect name="com.tony.pizza.domain.PizzaOrder_Roo_ToString"/>
+<aspect name="com.tony.pizza.domain.PizzaOrder_Roo_JavaBean"/>
+<aspect name="com.tony.pizza.domain.Base_Roo_JavaBean"/>
+<aspect name="com.tony.pizza.domain.Topping_Roo_JavaBean"/>
+<aspect name="com.tony.pizza.web.PizzaOrderController_Roo_Controller"/>
+<aspect name="com.tony.pizza.web.PizzaController_Roo_Controller"/>
+<aspect name="com.tony.pizza.domain.Pizza_Roo_JavaBean"/>
+<aspect name="com.tony.pizza.domain.Pizza_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

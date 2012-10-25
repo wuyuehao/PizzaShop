@@ -1,0 +1,100 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-25 10:59:01
+hint
+project --topLevelPackage com.tony.pizzashop
+hint
+jpa setup --provider HIBERNATE --database MYSQL 
+hint
+entity jpa --class ~.domain.Topping --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+entity jpa --class ~.domain.Base --testAutomatically 
+field string --fieldName name --notNull --sizeMin  2
+entity jpa --class ~.domain.Pizza --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field number --fieldName price --type java.lang.Float
+field set --fieldName topping --type ~.domain.Topping
+field reference --fieldName base --type ~.domain.Base
+entity jpa --class ~.domain.PizzaOrder --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field string --fieldName address --sizeMax 30
+field number --fieldName total --type java.lang.Float 
+field date --fieldName deliveryDate --type java.util.Date
+field set --fieldName pizzas --type ~.domain.Pizza
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-25 11:18:19
+download status
+download accept terms of use
+perform tests
+hint
+help
+perform tests
+perform tests
+perform tests
+perform tests
+perform tests
+perform tests
+jpa setup --provider HIBERNATE --database MYSQL 
+perform tests
+perform tests
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-25 14:11:45
+help
+hint
+web mvc setup
+web mvc all --package ~.web
+entity jpa --class ~.domain.Base
+entity jpa --class ~.domain.Base --testAutomatically 
+entity jpa --class ~.domain.PizzaOrderDataOnDemand
+field email template --fieldName email
+hint
+perform tests
+entity jpa --class ~.domain.PizzaOrder --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field string --fieldName address --sizeMax 30
+field number --fieldName total --type java.lang.Float 
+field date --fieldName deliveryDate --type java.util.Date
+field set --fieldName pizzas --type ~.domain.Pizza
+perform test
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-10-25 14:36:11
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-25 14:36:16
+hint
+web mvc all --package com.tony.pizzashop.web
+help
+web mvc update tags 
+web mvc update tags 
+// [failed] entity jpa --class ~.domain.PizzaOrder --testAutomatically 
+// [failed] field string --fieldName name --notNull --sizeMin 2
+// [failed] field string --fieldName address --sizeMax 30
+// [failed] field number --fieldName total --type java.lang.Float 
+// [failed] field date --fieldName deliveryDate --type java.util.Date
+// [failed] field set --fieldName pizzas --type ~.domain.Pizza
+perform test
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-10-25 14:48:58
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-25 14:49:08
+hint
+project --topLevelPackage com.tony.pizza
+hint
+jpa setup --database MYSQL --provider HIBERNATE 
+hint
+entity jpa --class com.tony.pizza.domain.Topping
+field number --fieldName id --type java.lang.Long --notNull
+field string --fieldName name --notNull --unique 
+entity jpa --class ~.domain.Topping --testAutomatically
+field string --fieldName name --notNull --sizeMin 2
+entity jpa --class ~.domain.Base --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+entity jpa --class ~.domain.Pizza --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field number --fieldName price --type java.lang.Float 
+field set --fieldName toppings --type ~.domain.Topping
+field reference --fieldName base --type ~.domain.Base
+entity jpa --class ~.domain.PizzaOrder --testAutomatically 
+field string --fieldName name --notNull --sizeMin 2
+field string --fieldName address --sizeMax 30
+field number --fieldName total --type java.lang.Float 
+field date --fieldName deliveryDate --type java.util.Date
+field set --fieldName pizzas --type ~.domain.Pizza
+web mvc setup
+web mvc all --package com.tony.pizza.web
+perform tests
+web mvc all --package ~.web
+perform tests
